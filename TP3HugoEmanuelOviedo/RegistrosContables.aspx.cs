@@ -67,7 +67,8 @@ namespace TP3HugoEmanuelOviedo
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            if (DropDownList3.SelectedIndex != -1)
+
+         if(DropDownList3.SelectedIndex != -1)
             {
                 if (!string.IsNullOrEmpty(TextBox1.Text) && DropDownList1.SelectedIndex != -1 && DropDownList2.SelectedIndex != -1)
                 {
@@ -75,20 +76,24 @@ namespace TP3HugoEmanuelOviedo
                     {
                         Crud.Update();
                         actualizar();
-                    } catch (Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         info.Text = ex.Message;
                     }
-                
+
                 }
                 else
                 {
                     info.Text = "Todos los campos tienen que estar completos";
                 }
-            }
+            } else
             {
-                info.Text = "Tenes que seleccionar un registro para modificar";
+                info.Text = "Tenes que seleccioanr un dato para modificar";
             }
-            }
+       
+        }
+
+      } 
+
     }
-}

@@ -54,10 +54,10 @@
                     <asp:ControlParameter ControlID="DropDownList2" Name="tipo" PropertyName="SelectedValue" Type="Boolean" />
                 </InsertParameters>
                 <UpdateParameters>
-                    <asp:Parameter Name="idCuenta" Type="Int32" />
-                    <asp:Parameter Name="monto" Type="Int32" />
-                    <asp:Parameter Name="tipo" Type="Boolean" />
-                    <asp:Parameter Name="id" Type="Int32" />
+                    <asp:ControlParameter ControlID="DropDownList1" Name="idCuenta" PropertyName="SelectedValue" Type="Int32" />
+                    <asp:ControlParameter ControlID="TextBox1" Name="monto" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="DropDownList2" Name="tipo" PropertyName="SelectedValue" Type="Boolean" />
+                    <asp:ControlParameter ControlID="DropDownList3" Name="id" PropertyName="SelectedValue" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
