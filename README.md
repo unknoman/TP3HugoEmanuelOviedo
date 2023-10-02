@@ -1,2 +1,2 @@
 # TP3HugoEmanuelOviedo
-TP3HugoEmanuelOviedo es la BD
+TP3HugoEmanuelOviedo.sql es la BD
